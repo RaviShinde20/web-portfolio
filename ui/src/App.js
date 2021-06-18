@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import '@elastic/eui/dist/eui_theme_light.css';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Header } from './pages/components/header';
+import { Home } from './pages/home';
 
 function App() {
     return (
         <main>
             <Switch>
-                <Route path="/dashboard" component={ Header } exact />
+                <Route path="/" component={ Home } />
             </Switch>
         </main>
     )

@@ -11,8 +11,10 @@ import {
     EuiContextMenu,
     EuiContextMenuItem,
     EuiContextMenuPanel,
+    EuiHeaderLinks,
+    EuiHeaderLink,
 } from '@elastic/eui';
-
+import logo from '../../finalyticsLogo.png'
 class Header extends React.Component {
     constructor(props) {
         super(props);
@@ -42,45 +44,30 @@ class Header extends React.Component {
     }
 
     render() {
-        
-        const items = [
-            <EuiContextMenuItem key="user" icon="user" href='#'>Profile</EuiContextMenuItem>,
-            <EuiContextMenuItem key="company" icon="users" href='/company'>Company Settings</EuiContextMenuItem>,
-            <EuiContextMenuItem key="logout" icon="exit" href='/logout'>Log Out</EuiContextMenuItem>,
-        ];
         const renderLogo = (
             <><EuiHeaderLogo
-                
+                iconType={ logo }
                 href="#"
                 onClick={ (e) => e.preventDefault() }
                 aria-label="Go to home page"
-            ><EuiText color='subdued'>EasyPractice</EuiText></EuiHeaderLogo></>
+            ><font>Finalytics</font></EuiHeaderLogo></>
         );
 
         const renderTitle = (
             <EuiHeaderSectionItemButton>
-                <EuiText color='subdued' textAlign='center'><h2>DSC-Manager</h2></EuiText>
+                <EuiText textAlign='center'><h2><font face='Courier New' color='white'>Finalytics</font></h2></EuiText>
             </EuiHeaderSectionItemButton>
         )
     
-        const renderNotifications = (
-            <EuiHeaderSectionItemButton
-                aria-label="Apps menu with 1 new app"
-                notification="1">
-                <EuiIcon type="bell" size="m" />
-            </EuiHeaderSectionItemButton>
-        );
-    
         const renderUser = (
-            <EuiHeaderSectionItem>
-                <EuiPopover 
-                button={<EuiHeaderSectionItemButton aria-label="Account menu" onClick={() => this.onClick()}><EuiAvatar name={this.state.user.firstName + ' ' + this.state.user.lastName} size="s" /></EuiHeaderSectionItemButton>} 
-                isOpen={this.state.isPopoverOpen}
-                closePopover={this.closePopover}
-                panelPaddingSize="none"
-                anchorPosition="downLeft">
-                    <EuiContextMenuPanel size='s' items={items} />
-                </EuiPopover>
+            <EuiHeaderSectionItem border='none'>
+                <EuiHeaderLinks><h7>
+                    <EuiHeaderLink size='xs'>About Us</EuiHeaderLink>
+                    <EuiHeaderLink size='xs'>Activities</EuiHeaderLink>
+                    <EuiHeaderLink size='xs'>Gallery</EuiHeaderLink>
+                    <EuiHeaderLink size='xs'>Our Team</EuiHeaderLink>
+                    <EuiHeaderLink size='xs'>Contact Us</EuiHeaderLink></h7>
+                </EuiHeaderLinks>
             </EuiHeaderSectionItem>
         );
     
@@ -89,14 +76,13 @@ class Header extends React.Component {
                 items: [renderLogo],
                 borders: 'right',
             },
-            { items: [renderTitle], borders: 'none' },
             {
-                items: [renderNotifications, renderUser],
+                items: [renderUser]
             },]
 
         return (
             <>
-                <EuiHeader position={ this.state.position } sections={ sections } />
+                <EuiHeader position={ this.state.position } sections={ sections } theme='dark' />
             </>
         );
     }
