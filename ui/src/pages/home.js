@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import '@elastic/eui/dist/eui_theme_light.css';
-import { EuiButton, EuiButtonEmpty, EuiModal, EuiModalBody, EuiModalFooter, EuiModalHeader, EuiModalHeaderTitle, EuiText, EuiFilePicker, EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiLink, EuiPageTemplate, EuiInMemoryTable, EuiCallOut, EuiLoadingSpinner } from '@elastic/eui';
+import { EuiButton, EuiButtonEmpty, EuiModal, EuiModalBody, EuiModalFooter, EuiModalHeader, EuiModalHeaderTitle, EuiText, EuiFilePicker, EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiLink, EuiPageTemplate, EuiInMemoryTable, EuiCallOut, EuiLoadingSpinner, EuiPageBody, EuiPageContent, EuiPageHeader } from '@elastic/eui';
 import { Header } from './components/header';
+import { Footer } from './components/footer';
 
 class Home extends React.Component {
     constructor(props) {
@@ -20,73 +21,18 @@ class Home extends React.Component {
         }
     }
 
-    componentWillMount() {
-        this.getAllCustomers() 
-    }
-  
-    getAllCustomers = () => {
-        //TODO: Placeholder and will be replaced by react component for final board
-    let columns = [
-        {
-            field: 'id',
-            name: 'ID',
-            sortable: true,
-            truncateText: true,
-        },
-        {
-            field: 'cid',
-            name: 'CID',
-            truncateText: true,
-        },
-        {
-            field: 'name',
-            name: 'Business Name',
-            truncateText: true
-        },
-        {
-        field: 'expiry',
-        name: 'Expiry',
-        truncateText: true
-        },
-        {
-        field: 'location',
-        name: 'Location',
-        truncateText: true
-        }
-        ]
-        
-        this.setState({
-        columns: columns
-        })
-    }
-
-    closeModal = () => {
-        this.setState({
-            isModalVisible: false
-        })
-    }
-
-    onChange = (files) => {
-        this.setState({
-            files: files,
-            uploadDisabled: false
-        });
-    };
-
     render() {
 
         return (
             <>
-                <Header />
+                <EuiPageTemplate>
+                    <EuiPageHeader><Header /></EuiPageHeader>
                 <EuiFlexGroup gutterSize='xl'>
                     <EuiFlexItem><EuiPageTemplate>
-                        <EuiText><h3>DSC Customer List</h3></EuiText> 
+                        <EuiText><h2><font face='Segoe UI'>About Me</font></h2></EuiText> 
                         <EuiSpacer /> 
-                <EuiInMemoryTable
-                    items={[]}
-                    columns={this.state.columns}
-                    search={{}}
-                /></EuiPageTemplate></EuiFlexItem></EuiFlexGroup>
+                </EuiPageTemplate></EuiFlexItem></EuiFlexGroup>
+                <Footer /></EuiPageTemplate>
             </>
         )
     }
