@@ -1,10 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import '@elastic/eui/dist/eui_theme_light.css';
-import { EuiButton, EuiButtonEmpty, EuiModal, EuiModalBody, EuiModalFooter, EuiModalHeader, EuiModalHeaderTitle, EuiText, EuiFilePicker, EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiLink, EuiPageTemplate, EuiInMemoryTable, EuiCallOut, EuiLoadingSpinner, EuiPageBody, EuiPageContent, EuiPageHeader } from '@elastic/eui';
+import { EuiButton, EuiButtonEmpty, EuiModal, EuiModalBody, EuiModalFooter, EuiModalHeader, EuiModalHeaderTitle, EuiText, EuiFilePicker, EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiLink, EuiPageTemplate, EuiInMemoryTable, EuiCallOut, EuiLoadingSpinner, EuiPageBody, EuiPageContent, EuiPageHeader, EuiCard, EuiImage, EuiIcon } from '@elastic/eui';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
+import profilePhoto from '../photos/shubham-photo.png'
 
-class Home extends React.Component {
+class Projects extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -17,7 +18,6 @@ class Home extends React.Component {
             columns: [],
             AlertText: "",
             AlertType: "error",
-
         }
     }
 
@@ -28,14 +28,15 @@ class Home extends React.Component {
                 <EuiPageTemplate>
                     <EuiPageHeader><Header /></EuiPageHeader>
                 <EuiFlexGroup gutterSize='xl'>
-                    <EuiFlexItem><EuiPageTemplate>
-                        <EuiText><h2><font face='Segoe UI'>About Me</font></h2></EuiText> 
-                        <EuiSpacer /> 
-                </EuiPageTemplate></EuiFlexItem></EuiFlexGroup>
-                <Footer /></EuiPageTemplate>
+                <EuiFlexItem>
+                        <EuiSpacer />
+                        <EuiText><h2><font face='Segoe UI'>Projects</font></h2></EuiText>
+                </EuiFlexItem>
+                </EuiFlexGroup>
+            <Footer /></EuiPageTemplate>
             </>
         )
     }
 };
 
-export { Home }
+export { Projects }

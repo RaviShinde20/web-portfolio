@@ -3,9 +3,8 @@ import '@elastic/eui/dist/eui_theme_light.css';
 import { EuiButton, EuiButtonEmpty, EuiModal, EuiModalBody, EuiModalFooter, EuiModalHeader, EuiModalHeaderTitle, EuiText, EuiFilePicker, EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiLink, EuiPageTemplate, EuiInMemoryTable, EuiCallOut, EuiLoadingSpinner, EuiPageBody, EuiPageContent, EuiPageHeader, EuiCard, EuiImage, EuiIcon } from '@elastic/eui';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
-import profilePhoto from '../photos/shubham-photo.png'
 
-class People extends React.Component {
+class Research extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,6 +17,10 @@ class People extends React.Component {
             columns: [],
             AlertText: "",
             AlertType: "error",
+            skills: ["Deep learning", "Data Analysis", "Research Machine", "Learning Innovation", "Rational     Analytics", "Multi-Disciplinary", "CNN", "AI", "Computer vision"],
+            shortTerm: ['MS - Data Science', 'Scholarships & Fellowships', 'Research Experience'],
+            midTerm: ['Applied Research', 'Innovations', 'Industry Experience'],
+            longTerm: ['Impactful Technocrat', 'Radical Technologies', 'Entrepreneur']
         }
     }
 
@@ -30,7 +33,7 @@ class People extends React.Component {
                 <EuiFlexGroup gutterSize='xl'>
                 <EuiFlexItem>
                         <EuiSpacer />
-                        <EuiText><h2><font face='Segoe UI'>People</font></h2></EuiText>
+                        <EuiText><h2><font face='Segoe UI'>Researches</font></h2></EuiText>
                 </EuiFlexItem>
                 </EuiFlexGroup>
             <Footer /></EuiPageTemplate>
@@ -39,4 +42,4 @@ class People extends React.Component {
     }
 };
 
-export { People }
+export { Research }

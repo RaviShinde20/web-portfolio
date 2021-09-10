@@ -55,13 +55,14 @@ class Header extends React.Component {
         const renderUser = (
             <EuiHeaderSectionItem border='none'>
                 <EuiHeaderLinks><h7>
-                    <EuiHeaderLink size='xs' href="#" style={{color:'white'}}>About Me</EuiHeaderLink>
+                    <EuiHeaderLink size='xs' href="/about" style={{color:'white'}}>About Me</EuiHeaderLink>
                     <EuiHeaderLink size='xs' href="/research" style={{color:'white'}}>Research</EuiHeaderLink>
                     <EuiHeaderLink size='xs' href="/publications" style={{color:'white'}}>Publications</EuiHeaderLink>
                     <EuiHeaderLink size='xs' href="/projects" style={{color:'white'}}>Projects</EuiHeaderLink>
                     <EuiHeaderLink size='xs' href="/work" style={{color:'white'}}>Work Experience</EuiHeaderLink>
+                    <EuiHeaderLink size='xs' href="/education" style={{color:'white'}}>Education</EuiHeaderLink>
                     <EuiHeaderLink size='xs' href="/people" style={{color:'white'}}>People</EuiHeaderLink>
-                    <EuiHeaderLink size='xs' href="" style={{color:'white'}}>Contact</EuiHeaderLink></h7>
+                    <EuiHeaderLink size='xs' href="/contact" style={{color:'white'}}>Contact</EuiHeaderLink></h7>
                 </EuiHeaderLinks>
             </EuiHeaderSectionItem>
         );
