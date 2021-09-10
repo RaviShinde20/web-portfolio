@@ -10,7 +10,7 @@ import {
     EuiHeaderLinks,
     EuiHeaderLink,
 } from '@elastic/eui';
-class Team extends React.Component {
+class People extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -27,4 +27,4 @@ class Team extends React.Component {
     }
 }
 
-export { Team }
+export { People }
