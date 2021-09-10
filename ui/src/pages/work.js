@@ -5,7 +5,7 @@ import { Header } from './components/header';
 import { Footer } from './components/footer';
 import profilePhoto from '../photos/shubham-photo.png'
 
-class People extends React.Component {
+class Work extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -30,7 +30,7 @@ class People extends React.Component {
                 <EuiFlexGroup gutterSize='xl'>
                 <EuiFlexItem>
                         <EuiSpacer />
-                        <EuiText><h2><font face='Segoe UI'>People</font></h2></EuiText>
+                        <EuiText><h2><font face='Segoe UI'>Work Experience</font></h2></EuiText>
                 </EuiFlexItem>
                 </EuiFlexGroup>
             <Footer /></EuiPageTemplate>
@@ -39,4 +39,4 @@ class People extends React.Component {
     }
 };
 
-export { People }
+export { Work }

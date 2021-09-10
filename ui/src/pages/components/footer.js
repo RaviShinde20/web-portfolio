@@ -23,7 +23,6 @@ class Footer extends React.Component {
     }
 
     render() {
-        const contact = <EuiText>Hi</EuiText>
         return (
             <>
             <EuiBottomBar position="sticky" paddingSize='s' style={{backgroundColor: '#0b2c57'}}>

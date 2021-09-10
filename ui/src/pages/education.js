@@ -5,7 +5,7 @@ import { Header } from './components/header';
 import { Footer } from './components/footer';
 import profilePhoto from '../photos/shubham-photo.png'
 
-class People extends React.Component {
+class Education extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,6 +18,10 @@ class People extends React.Component {
             columns: [],
             AlertText: "",
             AlertType: "error",
+            skills: ["Deep learning", "Data Analysis", "Research Machine", "Learning Innovation", "Rational     Analytics", "Multi-Disciplinary", "CNN", "AI", "Computer vision"],
+            shortTerm: ['MS - Data Science', 'Scholarships & Fellowships', 'Research Experience'],
+            midTerm: ['Applied Research', 'Innovations', 'Industry Experience'],
+            longTerm: ['Impactful Technocrat', 'Radical Technologies', 'Entrepreneur']
         }
     }
 
@@ -30,7 +34,7 @@ class People extends React.Component {
                 <EuiFlexGroup gutterSize='xl'>
                 <EuiFlexItem>
                         <EuiSpacer />
-                        <EuiText><h2><font face='Segoe UI'>People</font></h2></EuiText>
+                        <EuiText><h2><font face='Segoe UI'>Education</font></h2></EuiText>
                 </EuiFlexItem>
                 </EuiFlexGroup>
             <Footer /></EuiPageTemplate>
@@ -39,4 +43,4 @@ class People extends React.Component {
     }
 };
 
-export { People }
+export { Education }
