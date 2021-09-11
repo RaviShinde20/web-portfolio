@@ -2,10 +2,8 @@ import React, { Component, Fragment } from 'react';
 import '@elastic/eui/dist/eui_theme_light.css';
 import { EuiButton, EuiButtonEmpty, EuiModal, EuiModalBody, EuiModalFooter, EuiModalHeader, EuiModalHeaderTitle, EuiText, EuiFilePicker, EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiLink, EuiPageTemplate, EuiInMemoryTable, EuiCallOut, EuiLoadingSpinner, EuiPageBody, EuiPageContent, EuiPageHeader, EuiCard, EuiImage, EuiIcon } from '@elastic/eui';
 import styled from 'styled-components';
-import { Header } from './components/header';
-import { Footer } from './components/footer';
-import profilePhoto from '../photos/shubham-photo.png'
-import { ResearchGeneral } from './researchGeneral';
+import { Header } from '../components/header';
+import { Footer } from '../components/footer';
 
 const StyledText = styled.div`
   ul.skills-list {
@@ -30,7 +28,7 @@ const StyledText = styled.div`
     }
   }
 `;
-class Research extends React.Component {
+class Patent1 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -49,10 +47,6 @@ class Research extends React.Component {
         }
     }
 
-    onClick = () => {
-        return <ResearchGeneral />
-    }
-
     render() {
 
         return (
@@ -62,33 +56,21 @@ class Research extends React.Component {
                 <EuiFlexGroup gutterSize='xl'>
                 <EuiFlexItem>
                         <EuiSpacer />
-                        <EuiText><h2><font face='Segoe UI'>Researches</font></h2></EuiText>
+                        <EuiText><h2><font face='Segoe UI'>Universal Hybrid Model to Predict Mix Based Compressive Strength and
+                        Allied Mechanical Properties of Concrete, Indian Patent, No-202121022677</font></h2></EuiText>
                         <EuiSpacer size='m' />
-                        <EuiText><h3><font face='Segoe UI'>Patents</font></h3></EuiText>
+                        <EuiText><h5><font face='Segoe UI'>Mentor :- Dr. Hemant Dhonde 
+                        &emsp; &emsp; &emsp; &emsp; &emsp;
+                        &emsp; &emsp; &emsp; &emsp; &emsp; Sept 2020 – July 2021</font></h5></EuiText>
                         <EuiSpacer size='m' />
-                <EuiCard
-                    image={
-                        <div>
-                          <img style={{width: '100%',height: '20vw'}}
-                            src="https://source.unsplash.com/400x200/?Nature"
-                            alt="Nature"
-                            href="/about"
-                          />
-                        </div>
-                      }
-                    textAlign="left"
-                    title={<EuiText><b>1) Universal Hybrid Model to Predict Mix Based Compressive Strength and
-                    Allied Mechanical Properties of Concrete, Indian Patent,</b> <EuiLink href="https://drive.google.com/file/d/1bjLb9SaMhtI2vUEBMftJDQNF9Pj25LOq/view" target="_blank">No-202121022677</EuiLink></EuiText>}
-                    titleSize="xs"
-                    description="Mentor :- Dr. Hemant Dhonde &emsp; &emsp; &emsp; &emsp; &emsp;
-                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Sept 2020 – July 2021">
-                        <EuiLink href={"/research/1"}>Read More</EuiLink>
-                    </EuiCard>
+                        <EuiText><b>Key Highlights</b> 
+                        <StyledText><ul className="skills-list">
+                        {this.state.patent1Key && this.state.patent1Key.map((p, i) => <li key={i}>{p}</li>)}
+                        </ul></StyledText>
+                        <b>Value Additions</b>
+                        <StyledText><ul className="skills-list">
+                        {this.state.patent1Value && this.state.patent1Value.map((p, i) => <li key={i}>{p}</li>)}
+                        </ul></StyledText></EuiText>
                 </EuiFlexItem>
                 </EuiFlexGroup>
             <Footer /></EuiPageTemplate>
@@ -97,4 +79,4 @@ class Research extends React.Component {
     }
 };
 
-export { Research }
+export { Patent1 }

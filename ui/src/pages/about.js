@@ -1,9 +1,38 @@
 import React, { Component, Fragment } from 'react';
 import '@elastic/eui/dist/eui_theme_light.css';
 import { EuiButton, EuiButtonEmpty, EuiModal, EuiModalBody, EuiModalFooter, EuiModalHeader, EuiModalHeaderTitle, EuiText, EuiFilePicker, EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiLink, EuiPageTemplate, EuiInMemoryTable, EuiCallOut, EuiLoadingSpinner, EuiPageBody, EuiPageContent, EuiPageHeader, EuiCard, EuiImage, EuiIcon } from '@elastic/eui';
+import styled from 'styled-components';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 import profilePhoto from '../photos/shubham-photo.png'
+
+const StyledText = styled.div`
+  ul.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-gap: 0 10px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
+
+      &:before {
+        content: '• ';
+        left: 0;
+        color: var(--green);
+        font-size: var(--fz-sm);
+        line-height: 12px;
+      }
+    }
+  }
+`;
 class About extends React.Component {
     constructor(props) {
         super(props);
@@ -17,7 +46,7 @@ class About extends React.Component {
             columns: [],
             AlertText: "",
             AlertType: "error",
-            skills: ["Deep learning", "Data Analysis", "Research Machine", "Learning Innovation", "Rational     Analytics", "Multi-Disciplinary", "CNN", "AI", "Computer vision"],
+            skills: ["Deep learning", "Data Analysis", "Research Machine", "Learning Innovation", "Rational Analytics", "Multi-Disciplinary", "CNN", "AI", "Computer vision"],
             shortTerm: ['MS - Data Science', 'Scholarships & Fellowships', 'Research Experience'],
             midTerm: ['Applied Research', 'Innovations', 'Industry Experience'],
             longTerm: ['Impactful Technocrat', 'Radical Technologies', 'Entrepreneur']
@@ -43,9 +72,9 @@ class About extends React.Component {
                     <EuiSpacer size='m' /><EuiText><h3>Vision</h3>
                     <p>Equity in the field of creative Artificial Wisdom, enabling impactful and sustainable systems.</p></EuiText>
                     <EuiSpacer size='m' /><EuiText><h3>Forte</h3>
-                    <ul>
+                    <StyledText><ul className="skills-list">
                         {this.state.skills && this.state.skills.map((skill, i) => <li key={i}>{skill}</li>)}
-                    </ul>
+                    </ul></StyledText>
                     </EuiText>
                 </EuiFlexItem>
                     <EuiFlexItem><EuiImage
