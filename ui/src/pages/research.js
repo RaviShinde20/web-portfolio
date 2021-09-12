@@ -44,10 +44,6 @@ class Research extends React.Component {
             AlertText: "",
             AlertType: "error",
             skills: ["Deep learning", "Data Analysis", "Research Machine", "Learning Innovation", "Rational     Analytics", "Multi-Disciplinary", "CNN", "AI", "Computer vision"],
-            patent1Key: ['Unique dataset of Concrete Mix', 'Incorporates mathematical stability, dimensional homogeneity & reduction', 'Rational input parameters using wise learning protocol', 'Feature Engineering based on Artificial Wisdom', 'Hybrid-MDA- ANN Concrete strength prediction model', 'Deployment as Android and Web APP', 'Comparison with DL, ML & regression methods'],
-            patent1Value: ['Innovation', 'Problem solving', 'Multi-disciplinary Engg', 'Artificial Wisdom'],
-            patent2Key:['Classification of Concrete workability using CNN','Unique dataset of Concrete Mix images','Prediction of Concrete slump value. using ANN regression modelling','Deployment as Android and Web APP University Sponsored Project'],
-            patent2Value:['Applied Research ','Innovation','Problem solving','Cross Domain']
         }
     }
 
