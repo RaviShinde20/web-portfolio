@@ -10,6 +10,8 @@ import { Work } from './pages/work';
 import { Education } from './pages/education';
 import { People } from './pages/people';
 import { Contact } from './pages/contact';
+import { Patent1 } from './pages/patents/patent1';
+import { Patent2 } from './pages/patents/patent2';
 
 function App() {
     return (
@@ -18,6 +20,8 @@ function App() {
                 <Route exact path="/" component={ About } />
                 <Route exact path="/about" component={ About } />
                 <Route exact path="/research" component={ Research } />
+                <Route exact path="/research/1" component={ Patent1 } />
+                <Route exact path="/research/2" component={ Patent2 } />
                 <Route exact path="/publications" component={ Publications } />
                 <Route exact path="/projects" component={ Projects } />
                 <Route exact path="/work" component={ Work } />
