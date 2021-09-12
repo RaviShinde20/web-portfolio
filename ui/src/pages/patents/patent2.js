@@ -43,8 +43,10 @@ class Patent2 extends React.Component {
             AlertType: "error",
             skills: ["Deep learning", "Data Analysis", "Research Machine", "Learning Innovation", "Rational     Analytics", "Multi-Disciplinary", "CNN", "AI", "Computer vision"],
             patent1Key: ['Unique dataset of Concrete Mix', 'Incorporates mathematical stability, dimensional homogeneity & reduction', 'Rational input parameters using wise learning protocol', 'Feature Engineering based on Artificial Wisdom', 'Hybrid-MDA- ANN Concrete strength prediction model', 'Deployment as Android and Web APP', 'Comparison with DL, ML & regression methods'],
-            patent1Value: ['Innovation', 'Problem solving', 'Multi-disciplinary Engg', 'Artificial Wisdom']
-        }
+            patent1Value: ['Innovation', 'Problem solving', 'Multi-disciplinary Engg', 'Artificial Wisdom'],
+            patent2Key: ['Classification of Concrete workability using CNN','Unique dataset of Concrete Mix images','Prediction of Concrete slump value. using ANN regression modelling','Deployment as Android and Web APP University Sponsored Project'],
+            patent2Value: ['Applied Research ','Innovation','Problem solving','Cross Domain']
+            }
     }
 
     render() {
@@ -56,20 +58,21 @@ class Patent2 extends React.Component {
                 <EuiFlexGroup gutterSize='xl'>
                 <EuiFlexItem>
                         <EuiSpacer />
-                        <EuiText><h2><font face='Segoe UI'>Universal Hybrid Model to Predict Mix Based Compressive Strength and
-                        Allied Mechanical Properties of Concrete, Indian Patent, No-202121022677</font></h2></EuiText>
+                        <EuiText><h2><font face='Segoe UI'>2)	Design And Development of Application to Predict Workability 
+                        and Slump Value Using AI Techniques Indian Patent, No-202021048280 
+                        </font></h2></EuiText>
                         <EuiSpacer size='m' />
                         <EuiText><h5><font face='Segoe UI'>Mentor :- Dr. Hemant Dhonde 
                         &emsp; &emsp; &emsp; &emsp; &emsp;
-                        &emsp; &emsp; &emsp; &emsp; &emsp; Sept 2020 – July 2021</font></h5></EuiText>
+                        &emsp; &emsp; &emsp; &emsp; &emsp; May 2020 – Dec 2020</font></h5></EuiText>
                         <EuiSpacer size='m' />
                         <EuiText><b>Key Highlights</b> 
                         <StyledText><ul className="skills-list">
-                        {this.state.patent1Key && this.state.patent1Key.map((p, i) => <li key={i}>{p}</li>)}
+                        {this.state.patent2Key && this.state.patent2Key.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText>
                         <b>Value Additions</b>
                         <StyledText><ul className="skills-list">
-                        {this.state.patent1Value && this.state.patent1Value.map((p, i) => <li key={i}>{p}</li>)}
+                        {this.state.patent2Value && this.state.patent2Value.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText></EuiText>
                 </EuiFlexItem>
                 </EuiFlexGroup>

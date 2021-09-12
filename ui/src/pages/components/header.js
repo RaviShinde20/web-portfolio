@@ -14,7 +14,7 @@ import {
     EuiHeaderLinks,
     EuiHeaderLink,
 } from '@elastic/eui';
-import logo from '../../logos/sg-logo.svg'
+import logo from "../../logos/sg-logo (1).svg"
 class Header extends React.Component {
     constructor(props) {
         super(props);
