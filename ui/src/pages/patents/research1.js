@@ -28,7 +28,7 @@ const StyledText = styled.div`
     }
   }
 `;
-class Journal3 extends React.Component {
+class Research1 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -44,19 +44,9 @@ class Journal3 extends React.Component {
             skills: ["Deep learning", "Data Analysis", "Research Machine", "Learning Innovation", "Rational     Analytics", "Multi-Disciplinary", "CNN", "AI", "Computer vision"],
             patent1Key: ['Unique dataset of Concrete Mix', 'Incorporates mathematical stability, dimensional homogeneity & reduction', 'Rational input parameters using wise learning protocol', 'Feature Engineering based on Artificial Wisdom', 'Hybrid-MDA- ANN Concrete strength prediction model', 'Deployment as Android and Web APP', 'Comparison with DL, ML & regression methods'],
             patent1Value: ['Innovation', 'Problem solving', 'Multi-disciplinary Engg', 'Artificial Wisdom'],
-            journal1Research:['Holistic assessment of current research','Pathways for future research work'],
-            journal1Project:['Present Future directions & lacunas ','Present Challenges and Drawbacks','Study of Deep Learning methods','Systematic Review'],
-            journal1Value:['Systematic Review ','Decision Making','Critical Thinking ','Responsibility'],
-            journal2Research:['Automatic COVID-19 detection and Deploy pruned DL models for point-of-care devices'],
-            journal2Project:['Transfer Learning for COVID-19 Detection','Deployment on resource constraint point-of-care devices','Model compression technique Selective Filter Pruning method','95.47% Classification accuracy on pruned Resnet34 model','Lightweight COVID-19 Model','Pruned model with 42% FLOP and 22% parameters reduction'],
-            journal2Value:['Research Competency ','Concept Development','Social Impact ','Responsibility'],
-            journal3Research:['Audio Classification using CNN based Automatic Feature Extraction for Audio'],
-            journal3Project:['Novel CNN framework for Audio classification','Comparison with SVM, and Random Forest','Unique Indian Classical Raga Audio data','1-D CNN Audio Classifier ','Industry research Industry Innovation'],
-            journal3Value:['Novel Pathways ','Research Competency ','CNN','Audio Processing'],
-            journal4Research:['To provide a robust & rational methodology for cause-effect modelling using MDA and its comparison with AI methods.'],
-            journal4Project:['Novel mathematical modelling based on Modified Buckingham pie theorem','Deployed as Android & Web App','Collected 1000+ samples dataset from 10 different reputed sources','Developed ANN, SVM, Random Forest, Decision Tree models','Compared the performance with ANN & other ML techniques','Evaluated based on its rationality, dimensional reduction and Black box effect'],
-            journal4Value:['Mathematical Modelling','Multi-Disciplinary'],
-          
+            research1Research:['Provide Advanced Image Retrieval System using CNN, Autoencoder & GANs'],
+            research1Project:['Application of Deep Convolutional Neural Networks for Image feature- based Retrieval system','Comparison of CNN, Autoencoder and GAN architectures','IET – Book Chapter Publication'],
+            research1Value:['Logical Thinking','Continuous Research Interest']
           
             
     }
@@ -71,24 +61,24 @@ class Journal3 extends React.Component {
                 <EuiFlexGroup gutterSize='xl'>
                 <EuiFlexItem>
                         <EuiSpacer />
-                        <EuiText><h2><font face='Segoe UI'>3)	Indian Classical Raga audio classification using Deep Learning and Machine Learning
+                        <EuiText><h2><font face='Segoe UI'>1) Intelligent Image Retrieval System Using Deep Neural Networks
                         </font></h2></EuiText>
                         <EuiSpacer size='m' />
-                        <EuiText><h5><font face='Segoe UI'>Taylor Francis Journal of New Music Research (Under preparation)
+                        <EuiText><h5><font face='Segoe UI'>Springer - Artificial Intelligence Review (Under preparation)
                         &emsp; &emsp; &emsp; &emsp; &emsp;
-                        &emsp; &emsp; &emsp; &emsp; &emsp; May 2021 - Sept 2021</font></h5></EuiText>
+                        &emsp; &emsp; &emsp; &emsp; &emsp;Dec 2020 – May 2021</font></h5></EuiText>
                         <EuiSpacer size='m' />
                         <EuiText><b>Research Objectives</b> 
                         <StyledText><ul className="skills-list">
-                        {this.state. journal3Research && this.state.journal3Research.map((p, i) => <li key={i}>{p}</li>)}
+                        {this.state.research1Research && this.state.research1Research.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText>
-                        <b> Project Highlights</b>
+                        <b>Project Highlights</b>
                         <StyledText><ul className="skills-list">
-                        {this.state. journal3Project && this.state. journal3Project.map((p, i) => <li key={i}>{p}</li>)}
+                        {this.state.research1Project && this.state. research1Project.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText>
-                        <b> Value Additions </b>
+                        <b>Value Additions </b>
                         <StyledText><ul className="skills-list">
-                        {this.state. journal3Value && this.state. journal3Value.map((p, i) => <li key={i}>{p}</li>)}
+                        {this.state.research1Value && this.state. research1Value.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText>
                         </EuiText>
                 </EuiFlexItem>
@@ -99,4 +89,4 @@ class Journal3 extends React.Component {
     }
 };
 
-export { Journal3}
+export { Research1}

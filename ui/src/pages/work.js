@@ -40,7 +40,7 @@ class Work extends React.Component {
                 'YoloV3 based Image recommendation',
                 'Worked under supervision of Prof Rakesh Ranjan (Prof. SJSU, USA)',
                 'GUI based Text generation and Image extraction for Brand Marketing'
-                ],
+                ],                    
             internship1Value: ['Industry research', 'Industry Innovation', 'NLP, DL', 'Research Competency '],
             internship2Key: ['Worked on Predictive maintenance Analysis',
                 'Present a PoC simulation for client',

@@ -79,14 +79,15 @@ class Journal4 extends React.Component {
                         &emsp; &emsp; &emsp; &emsp; &emsp;
                         &emsp; &emsp; &emsp; &emsp; &emsp; Dec 2020 - Aug 2020</font></h5></EuiText>
                         <EuiSpacer size='m' />
-                        <EuiText><b>Key Highlights</b> 
+                        <EuiText><b>Research Objectives</b> 
                         <StyledText><ul className="skills-list">
                         {this.state. journal4Research && this.state.journal4Research.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText>
-                        <b>Value Additions</b>
+                        <b>Project Highlights</b>
                         <StyledText><ul className="skills-list">
                         {this.state. journal4Project && this.state. journal4Project.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText>
+                        <b> Value Additions</b>
                         <StyledText><ul className="skills-list">
                         {this.state. journal4Value && this.state. journal4Value.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText>

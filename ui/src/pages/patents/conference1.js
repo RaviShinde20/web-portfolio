@@ -28,7 +28,7 @@ const StyledText = styled.div`
     }
   }
 `;
-class Journal1 extends React.Component {
+class Conference1 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -44,19 +44,15 @@ class Journal1 extends React.Component {
             skills: ["Deep learning", "Data Analysis", "Research Machine", "Learning Innovation", "Rational     Analytics", "Multi-Disciplinary", "CNN", "AI", "Computer vision"],
             patent1Key: ['Unique dataset of Concrete Mix', 'Incorporates mathematical stability, dimensional homogeneity & reduction', 'Rational input parameters using wise learning protocol', 'Feature Engineering based on Artificial Wisdom', 'Hybrid-MDA- ANN Concrete strength prediction model', 'Deployment as Android and Web APP', 'Comparison with DL, ML & regression methods'],
             patent1Value: ['Innovation', 'Problem solving', 'Multi-disciplinary Engg', 'Artificial Wisdom'],
-            journal1Research:['Holistic assessment of current research','Pathways for future research work'],
-            journal1Project:['Present Future directions & lacunas ','Present Challenges and Drawbacks','Study of Deep Learning methods','Systematic Review'],
-            journal1Value:['Systematic Review ','Decision Making','Critical Thinking ','Responsibility'],
-            journal2Research:['Automatic COVID-19 detection and Deploy pruned DL models for point-of-care devices'],
-            journal2Project:['Transfer Learning for COVID-19 Detection','Deployment on resource constraint point-of-care devices','Model compression technique Selective Filter Pruning method','95.47% Classification accuracy on pruned Resnet34 model','Lightweight COVID-19 Model','Pruned model with 42% FLOP and 22% parameters reduction'],
-            journal2Value:['Research Competency ','Concept Development','Social Impact ','Responsibility'],
-            journal3Research:['Audio Classification using CNN based Automatic Feature Extraction for Audio'],
-            journal3Project:['Novel CNN framework for Audio classification','Comparison with SVM, and Random Forest','Unique Indian Classical Raga Audio data','1-D CNN Audio Classifier ','Industry research Industry Innovation'],
-            journal3Value:['Novel Pathways ','Research Competency ','CNN','Audio Processing'],
-            journal4Research:['To provide a robust & rational methodology for cause-effect modelling using MDA and its comparison with AI methods.'],
-            journal4Project:['Novel mathematical modelling based on Modified Buckingham pie theorem','Deployed as Android & Web App','Collected 1000+ samples dataset from 10 different reputed sources','Developed ANN, SVM, Random Forest, Decision Tree models','Compared the performance with ANN & other ML techniques','Evaluated based on its rationality, dimensional reduction and Black box effect'],
-            journal4Value:['Mathematical Modelling','Multi-Disciplinary'],
-          
+            conference1Research:['Automatic Bird Species Classification using Transfer Learning based CNN'],
+            conference1Project:['Successful classification of 200 bird species ','96% Testing accuracy by VGG16 ','Implemented VGG16, ResNet50, MobileNet architectures','Deployed as Android App ','Presented in IACC-21 conference'],
+            conference1Value:['Social Impact','Applied Research'],
+            conference2Research:['AI based Brand marketing by Automatic Text Generation and Image Recommendation on Twitter'],
+            conference2Project:['Innovative concept','YoloV4 based image detection and generated text-based recommendation','Based on supermarket sales data','NLG based automated text generation','Deployment as web app with twitter compatible'],
+            conference2Value:['Market Research','Automation'],
+            conference3Research:['Automatic Indian Vehicles Detection and Monitoring using CCTV systems for Indian Toll Plazas and Traffic stations'],
+            conference3Project:['Acquisition of a dataset for Indian Vehicle and surroundings','78% mAP after fine-tuning the YOLOV3 model','Implementation of YOLOV3 & YOLOV4.','Research publication recognition','Extending Vehicle Classification based on vehicle axle count'],
+            conference3Value:['Problem Solving','Innovation']
           
             
     }
@@ -71,25 +67,23 @@ class Journal1 extends React.Component {
                 <EuiFlexGroup gutterSize='xl'>
                 <EuiFlexItem>
                         <EuiSpacer />
-                        <EuiText><h2><font face='Segoe UI'>1)	Deep Learning methods for Skin lesion classification and segmentation -
-                         A comprehensive review.
-                        </font></h2></EuiText>
+                        <EuiText><h2><font face='Segoe UI'>1)	A Deep Learning-Based Transfer Learning Approach for Bird Species Classification
+                        <EuiLink href="https://doi.org/10.1007/978-981-16-0404-1_4" target="_blank" /></font></h2></EuiText>
                         <EuiSpacer size='m' />
-                        <EuiText><h5><font face='Segoe UI'>Springer - Artificial Intelligence Review (Under preparation)
-                        &emsp; &emsp; &emsp; &emsp; &emsp;
-                        &emsp; &emsp; &emsp; &emsp; &emsp; March 2020 – Sept 2021</font></h5></EuiText>
+                        <EuiText><h5><font face='Segoe UI'>
+                        May 2020 – December 2020</font></h5></EuiText>
                         <EuiSpacer size='m' />
                         <EuiText><b>Research Objectives</b> 
                         <StyledText><ul className="skills-list">
-                        {this.state. journal1Research && this.state.journal1Research.map((p, i) => <li key={i}>{p}</li>)}
+                        {this.state.conference1Research && this.state.conference1Research.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText>
                         <b>Project Highlights</b>
                         <StyledText><ul className="skills-list">
-                        {this.state. journal1Project && this.state. journal1Project.map((p, i) => <li key={i}>{p}</li>)}
+                        {this.state.conference1Project && this.state. conference1Project.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText>
                         <b>Value Additions</b>
                         <StyledText><ul className="skills-list">
-                        {this.state. journal1Value && this.state. journal1Value.map((p, i) => <li key={i}>{p}</li>)}
+                        {this.state.conference1Value && this.state. conference1Value.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText>
                         </EuiText>
                 </EuiFlexItem>
@@ -100,4 +94,4 @@ class Journal1 extends React.Component {
     }
 };
 
-export { Journal1 }
+export { Conference1}

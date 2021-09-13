@@ -34,7 +34,7 @@ class Education extends React.Component {
                 <EuiFlexGroup gutterSize='xl'>
                 <EuiFlexItem>
                         <EuiSpacer />
-                        <EuiText><h2><font face='Segoe UI'>Education</font></h2></EuiText>
+                        <EuiText><h2><font face='Segoe UI'>Academic Equity</font></h2></EuiText>
                 </EuiFlexItem>
                 </EuiFlexGroup>
             <Footer /></EuiPageTemplate>
