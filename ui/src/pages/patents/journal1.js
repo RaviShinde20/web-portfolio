@@ -71,9 +71,7 @@ class Journal1 extends React.Component {
                 <EuiFlexGroup gutterSize='xl'>
                 <EuiFlexItem>
                         <EuiSpacer />
-                        <EuiText><h2><font face='Segoe UI'>1)	Deep Learning methods for Skin lesion classification and segmentation -
-                         A comprehensive review.
-                        </font></h2></EuiText>
+                        <EuiText><h2><font face='Segoe UI'>1)	Deep Learning methods for Skin lesion classification and segmentation - A comprehensive review</font></h2></EuiText>
                         <EuiSpacer size='m' />
                         <EuiText><h5><font face='Segoe UI'>Springer - Artificial Intelligence Review (Under preparation)
                         &emsp; &emsp; &emsp; &emsp; &emsp;

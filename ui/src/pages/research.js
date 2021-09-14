@@ -128,8 +128,7 @@ class Research extends React.Component {
                       }
                     textAlign="left"
                     title={<EuiText><b>1)	Deep Learning methods for Skin lesion classification and segmentation 
-                      - A comprehensive review.
-                     ,</b> </EuiText>}
+                      - A comprehensive review</b> </EuiText>}
                     titleSize="xs"
                     description="Springer - Artificial Intelligence Review (Under preparation) &emsp; &emsp; &emsp; &emsp; &emsp;
                     &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
@@ -154,8 +153,7 @@ class Research extends React.Component {
                       }
                     textAlign="left"
                     title={<EuiText><b>2)	Important weights only Transfer 
-                      Learning approach for COVID-19 classification on point-of-care devices
-                     ,</b></EuiText>}
+                      Learning approach for COVID-19 classification on point-of-care devices</b></EuiText>}
                     titleSize="xs"
                     description="Elsevier Computers in Biology & Medicine (Under preparation) &emsp; &emsp; &emsp; &emsp; &emsp;
                     &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
@@ -179,8 +177,7 @@ class Research extends React.Component {
                         </div>
                       }
                     textAlign="left"
-                    title={<EuiText><b>3)	Indian Classical Raga audio classification using Deep Learning and Machine Learning
-                     ,</b> </EuiText>}
+                    title={<EuiText><b>3)	Indian Classical Raga audio classification using Deep Learning and Machine Learning</b> </EuiText>}
                     titleSize="xs"
                     description="Taylor Francis Journal of New Music Research (Under preparation) &emsp; &emsp; &emsp; &emsp; &emsp;
                     &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
@@ -205,8 +202,7 @@ class Research extends React.Component {
                       }
                     textAlign="left"
                     title={<EuiText><b>4) Concrete compressive strength Prediction using Modified Dimensional Analysis,
-                       Artificial Neural Networks and Machine Learning
-                     ,</b> </EuiText>}
+                       Artificial Neural Networks and Machine Learning</b> </EuiText>}
                     titleSize="xs"
                     description="ASCE Journal of Materials in Civil Engineering (Under preparation) &emsp; &emsp; &emsp; &emsp; &emsp;
                     &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
@@ -231,8 +227,7 @@ class Research extends React.Component {
                         </div>
                       }
                     textAlign="left"
-                    title={<EuiText><b>1)	A Deep Learning-Based Transfer Learning Approach for Bird Species Classification
-                     ,</b> </EuiText>}
+                    title={<EuiText><b>1)	A Deep Learning-Based Transfer Learning Approach for Bird Species Classification</b> </EuiText>}
                     titleSize="xs"
                     
                     description=" May 2020 – December 2020">
@@ -250,8 +245,7 @@ class Research extends React.Component {
                         </div>
                       }
                     textAlign="left"
-                    title={<EuiText><b>2)	Camelot: AI Powered Campaign Management System
-                     ,</b> </EuiText>}
+                    title={<EuiText><b>2)	Camelot: AI Powered Campaign Management System</b> </EuiText>}
                     titleSize="xs"
                     description="IEEE : GCAT (Global Conference of Advanced Technology) -2021 (Accepted)&emsp; &emsp; &emsp; &emsp; &emsp;
                     &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
@@ -274,8 +268,7 @@ class Research extends React.Component {
                         </div>
                       }
                     textAlign="left"
-                    title={<EuiText><b>3)	Deep Learning based Indian Vehicle Detection and Monitoring System
-                     ,</b> </EuiText>}
+                    title={<EuiText><b>3)	Deep Learning based Indian Vehicle Detection and Monitoring System</b> </EuiText>}
                     titleSize="xs"
                     description="Springer - Artificial Intelligence Review (Under preparation) &emsp; &emsp; &emsp; &emsp; &emsp;
                     &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
@@ -301,8 +294,7 @@ class Research extends React.Component {
                         </div>
                       }
                     textAlign="left"
-                    title={<EuiText><b>1) Intelligent Image Retrieval System Using Deep Neural Networks
-                     ,</b> </EuiText>}
+                    title={<EuiText><b>1) Intelligent Image Retrieval System Using Deep Neural Networks</b> </EuiText>}
                     titleSize="xs"
                     description="Springer - Artificial Intelligence Review (Under preparation) &emsp; &emsp; &emsp; &emsp; &emsp;
                     &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
@@ -327,8 +319,7 @@ class Research extends React.Component {
                         </div>
                       }
                     textAlign="left"
-                    title={<EuiText><b>1) Discussion of “Improvement in Estimating Durations for Building Projects Using Artificial Neural Network and Sensitivity Analysis" (ASCE)
-                     ,</b> </EuiText>}
+                    title={<EuiText><b>1) Discussion of “Improvement in Estimating Durations for Building Projects Using Artificial Neural Network and Sensitivity Analysis" (ASCE)</b> </EuiText>}
                     titleSize="xs"
                     description="  July 2021 – Aug 2021">
                         <EuiLink href={"/research/11"}>Read More</EuiLink>
