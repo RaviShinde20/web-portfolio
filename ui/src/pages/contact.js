@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import '@elastic/eui/dist/eui_theme_light.css';
-import { EuiText, EuiFlexGrid, EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiLink, EuiPageTemplate, EuiButtonIcon, EuiCallOut, EuiLoadingSpinner, EuiPageBody, EuiPageContent, EuiPageHeader, EuiCard, EuiImage, EuiIcon } from '@elastic/eui';
+import { EuiText, EuiFlexGrid, EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiLink, EuiPageTemplate, EuiButtonIcon, EuiCallOut, EuiLoadingSpinner, EuiPageBody, EuiPageContent, EuiPageHeader, EuiCard, EuiImage, EuiIcon, EuiTextColor } from '@elastic/eui';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 import map from '../logos/maps-logo.svg'
@@ -83,6 +83,16 @@ class Contact extends React.Component {
                         <EuiText>9326386623</EuiText>
                     </EuiCard>
                 </EuiFlexItem></EuiFlexGroup>
+                <EuiSpacer size='xxl'/>
+                <EuiSpacer size='xxl'/>
+                <EuiSpacer size='xxl'/>
+                <EuiSpacer size='xxl'/>
+                <EuiFlexGroup>
+                <EuiFlexItem><EuiText textAlign="center" size='s'>
+                    <p>© Shubham Gujar | Developed by <EuiLink href="https://www.linkedin.com/in/saurav-chavan-87ba09193/" color='text'><u>Saurav Chavan</u></EuiLink> & <EuiLink href="www.linkedin.com/in/ravi-shinde-0b3109174/" color='text'><u>Ravi Shinde</u></EuiLink></p>
+                </EuiText></EuiFlexItem>
+                </EuiFlexGroup>
+                <EuiSpacer size='xxl'/>
             <Footer /></EuiPageTemplate>
             </>
         )
