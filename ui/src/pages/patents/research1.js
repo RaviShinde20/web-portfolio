@@ -28,7 +28,7 @@ const StyledText = styled.div`
     }
   }
 `;
-class Patent2 extends React.Component {
+class Research1 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -44,9 +44,12 @@ class Patent2 extends React.Component {
             skills: ["Deep learning", "Data Analysis", "Research Machine", "Learning Innovation", "Rational     Analytics", "Multi-Disciplinary", "CNN", "AI", "Computer vision"],
             patent1Key: ['Unique dataset of Concrete Mix', 'Incorporates mathematical stability, dimensional homogeneity & reduction', 'Rational input parameters using wise learning protocol', 'Feature Engineering based on Artificial Wisdom', 'Hybrid-MDA- ANN Concrete strength prediction model', 'Deployment as Android and Web APP', 'Comparison with DL, ML & regression methods'],
             patent1Value: ['Innovation', 'Problem solving', 'Multi-disciplinary Engg', 'Artificial Wisdom'],
-            patent2Key: ['Classification of Concrete workability using CNN','Unique dataset of Concrete Mix images','Prediction of Concrete slump value. using ANN regression modelling','Deployment as Android and Web APP University Sponsored Project'],
-            patent2Value: ['Applied Research ','Innovation','Problem solving','Cross Domain']
-            }
+            research1Research:['Provide Advanced Image Retrieval System using CNN, Autoencoder & GANs'],
+            research1Project:['Application of Deep Convolutional Neural Networks for Image feature- based Retrieval system','Comparison of CNN, Autoencoder and GAN architectures','IET – Book Chapter Publication'],
+            research1Value:['Logical Thinking','Continuous Research Interest']
+          
+            
+    }
     }
 
     render() {
@@ -58,22 +61,26 @@ class Patent2 extends React.Component {
                 <EuiFlexGroup gutterSize='xl'>
                 <EuiFlexItem>
                         <EuiSpacer />
-                        <EuiText><h2><font face='Segoe UI'>2)	Design And Development of Application to Predict Workability 
-                        and Slump Value Using AI Techniques Indian Patent, No-202021048280 
+                        <EuiText><h2><font face='Segoe UI'>1) Intelligent Image Retrieval System Using Deep Neural Networks
                         </font></h2></EuiText>
                         <EuiSpacer size='m' />
-                        <EuiText><h5><font face='Segoe UI'>Mentor :- Dr. Hemant Dhonde 
+                        <EuiText><h5><font face='Segoe UI'>Springer - Artificial Intelligence Review (Under preparation)
                         &emsp; &emsp; &emsp; &emsp; &emsp;
-                        &emsp; &emsp; &emsp; &emsp; &emsp; May 2020 – Dec 2020</font></h5></EuiText>
+                        &emsp; &emsp; &emsp; &emsp; &emsp;Dec 2020 – May 2021</font></h5></EuiText>
                         <EuiSpacer size='m' />
-                        <EuiText><b>Key Highlights</b> 
+                        <EuiText><b>Research Objectives</b> 
                         <StyledText><ul className="skills-list">
-                        {this.state.patent2Key && this.state.patent2Key.map((p, i) => <li key={i}>{p}</li>)}
+                        {this.state.research1Research && this.state.research1Research.map((p, i) => <li key={i}>{p}</li>)}
                         </ul></StyledText>
-                        <b>Value Additions</b>
+                        <b>Project Highlights</b>
                         <StyledText><ul className="skills-list">
-                        {this.state.patent2Value && this.state.patent2Value.map((p, i) => <li key={i}>{p}</li>)}
-                        </ul></StyledText></EuiText>
+                        {this.state.research1Project && this.state. research1Project.map((p, i) => <li key={i}>{p}</li>)}
+                        </ul></StyledText>
+                        <b>Value Additions </b>
+                        <StyledText><ul className="skills-list">
+                        {this.state.research1Value && this.state. research1Value.map((p, i) => <li key={i}>{p}</li>)}
+                        </ul></StyledText>
+                        </EuiText>
                 </EuiFlexItem>
                 </EuiFlexGroup>
             <Footer /></EuiPageTemplate>
@@ -82,4 +89,4 @@ class Patent2 extends React.Component {
     }
 };
 
-export { Patent2 }
+export { Research1}

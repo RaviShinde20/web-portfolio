@@ -102,6 +102,29 @@ class About extends React.Component {
                 </EuiFlexGroup>
                 </EuiFlexItem>
                 </EuiFlexGroup>
+                <EuiFlexGroup gutterSize='xl'>
+                <EuiFlexItem>
+                <EuiSpacer size='m' /><EuiText><h3>Testimonials</h3></EuiText>
+                <EuiSpacer /><EuiFlexGroup>
+                <EuiCard textAlign="left" title="1" description={"1"} titleSize='xs'>
+                <EuiText size="s">
+                Testimonial 1
+                </EuiText></EuiCard>
+                <EuiCard textAlign="left" title="2" description={"1"} titleSize='xs'>
+                <EuiText size="s">
+                Testimonial 2
+                </EuiText></EuiCard>
+                <EuiCard textAlign="left" title="3" description={"1"} titleSize='xs'>
+                <EuiText size="s">
+                Testimonial 3
+                </EuiText></EuiCard>
+                <EuiCard textAlign="left" title="4" description={"1"} titleSize='xs'>
+                <EuiText size="s">
+                Testimonial 4
+                </EuiText></EuiCard>
+                </EuiFlexGroup>
+                </EuiFlexItem>
+                </EuiFlexGroup>
             <Footer /></EuiPageTemplate>
             </>
         )
