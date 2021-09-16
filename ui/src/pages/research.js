@@ -66,13 +66,9 @@ class Research extends React.Component {
                         <EuiSpacer size='m' />
                 <EuiCard
                     image={
-                        <div>
-                          <img style={{width: '100%',height: '20vw'}}
-                            src="https://source.unsplash.com/400x200/?Nature"
-                            alt="Nature"
-                            href="/about"
-                          />
-                        </div>
+                      <div>
+                      <iframe style={{width: '100%',height: '20vw'}} src='https://www.labnol.org/embed-pdf-200208'></iframe>
+                    </div>
                       }
                     textAlign="left"
                     title={<EuiText><b>1) Universal Hybrid Model to Predict Mix Based Compressive Strength and
@@ -91,11 +87,7 @@ class Research extends React.Component {
                     <EuiCard
                     image={
                         <div>
-                          <img style={{width: '100%',height: '20vw'}}
-                            src="https://picsum.photos/300/300"
-                             alt="Nature"
-                            href="/about"
-                          />
+                          <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTWzy0idXRBZWD9fIoDJoKSlHsSmZDIlWcIqP6viD9ni991h_rFeMgZUUqtH6WQpi6UuiXzNF8mY0GW/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="505" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                         </div>
                       }
                     textAlign="left"
