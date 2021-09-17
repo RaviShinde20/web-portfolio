@@ -2,7 +2,7 @@
   "name": "ui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sauravchavan.github.io/web-portfolio/ui",
+  "homepage": "https://sauravchavan.github.io/",
   "dependencies": {
     "@elastic/datemath": "^5.0.3",
     "@elastic/eui": "^31.11.0",
